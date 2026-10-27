@@ -25,7 +25,9 @@ Features:
 - On slopes, whatever the zone cannot hold is placed right next to it, so you always receive the full amount.
 - Delivery history, map markers and a built-in "How it works" guide.
 - Delivery time and fee can be changed in the game settings.
-- Multiplayer supported.]]></en>
+- Multiplayer supported.
+
+Bug reports: https://github.com/AntCant/FS25_HeapDelivery]]></en>
         <de><![CDATA[Bestelle Schüttgut und lass es dir als Haufen auf dein eigenes Land liefern.
 
 Markiere eine Lieferzone, wähle Produkt und Menge, und nach der Lieferzeit liegt der Haufen in der Zone.
@@ -39,7 +41,9 @@ Funktionen:
 - Am Hang wird, was die Zone nicht hält, direkt daneben abgeladen, so bekommst du immer die volle Menge.
 - Lieferverlauf, Kartenmarkierungen und eine eingebaute Anleitung "So funktioniert es".
 - Lieferzeit und Gebühr lassen sich in den Spieleinstellungen ändern.
-- Mehrspieler wird unterstützt.]]></de>
+- Mehrspieler wird unterstützt.
+
+Fehlermeldungen: https://github.com/AntCant/FS25_HeapDelivery]]></de>
         <fr><![CDATA[Commandez des produits en vrac et faites-les livrer en tas sur vos propres terres.
 
 Marquez une zone de livraison, choisissez le produit et la quantité, et après le délai de livraison le tas est déposé dans la zone.
@@ -53,7 +57,9 @@ Fonctionnalités :
 - En pente, ce que la zone ne peut pas contenir est déposé juste à côté, vous recevez donc toujours la quantité complète.
 - Historique des livraisons, marqueurs sur la carte et guide intégré "Comment ça marche".
 - Le délai et les frais de livraison se règlent dans les paramètres de jeu.
-- Multijoueur pris en charge.]]></fr>
+- Multijoueur pris en charge.
+
+Signalement de bugs : https://github.com/AntCant/FS25_HeapDelivery]]></fr>
         <it><![CDATA[Ordina prodotti sfusi e falli consegnare in un cumulo sul tuo terreno.
 
 Segna una zona di consegna, scegli prodotto e quantità e, dopo il tempo di consegna, il cumulo viene scaricato nella zona.
@@ -67,7 +73,9 @@ Caratteristiche:
 - In pendenza, ciò che la zona non riesce a contenere viene scaricato proprio accanto, così ricevi sempre la quantità completa.
 - Cronologia delle consegne, indicatori sulla mappa e guida integrata "Come funziona".
 - Tempo e costo di consegna si possono modificare nelle impostazioni di gioco.
-- Multigiocatore supportato.]]></it>
+- Multigiocatore supportato.
+
+Segnalazione di bug: https://github.com/AntCant/FS25_HeapDelivery]]></it>
     </description>
 
     <l10n filenamePrefix="l10n/l10n"/>
