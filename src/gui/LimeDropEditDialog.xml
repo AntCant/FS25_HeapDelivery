@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Edit a spot: Size / Rename / Remove, a popup over the zone list like the other dialogs -->
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg" id="dialogBgElement"/>
+
+    <GuiElement profile="ldze_dialogBg" id="dialogElement">
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+
+        <Text profile="ldze_title" id="dialogTitleElement" text=""/>
+        <Text profile="ldze_text" id="dialogTextElement" text=""/>
+
+        <BoxLayout profile="ldze_buttonRow">
+            <Button profile="ldze_button" id="sizeButton" text="Size" onClick="onClickSize">
+                <ThreePartBitmap profile="ldze_roundBg"/>
+            </Button>
+            <Button profile="ldze_button" id="renameButton" text="Rename" onClick="onClickRename">
+                <ThreePartBitmap profile="ldze_roundBg"/>
+            </Button>
+            <Button profile="ldze_button" id="removeButton" text="Remove" onClick="onClickRemove">
+                <ThreePartBitmap profile="ldze_roundBgDanger"/>
+            </Button>
+        </BoxLayout>
+
+        <BoxLayout profile="fs25_dialogButtonBox">
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" id="backButton"/>
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ldze_dialogBg" extends="baseReference" with="anchorMiddleCenter">
+            <size value="800px 330px"/>
+        </Profile>
+
+        <Profile name="ldze_title" extends="fs25_dialogTitle" with="anchorTopCenter">
+            <size value="740px 40px"/>
+            <position value="0px -30px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ldze_text" extends="fs25_refillDialogText" with="anchorTopCenter">
+            <size value="740px 30px"/>
+            <position value="0px -78px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ldze_buttonRow" extends="emptyPanel" with="anchorTopCenter">
+            <size value="740px 56px"/>
+            <position value="0px -135px"/>
+            <flowDirection value="horizontal"/>
+            <alignmentX value="center"/>
+            <alignmentY value="middle"/>
+        </Profile>
+
+        <Profile name="ldze_button" extends="emptyPanel">
+            <size value="200px 50px"/>
+            <margin value="10px 0px 10px 0px"/>
+            <textSize value="18px"/>
+            <textBold value="true"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <textHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <textFocusedColor value="$preset_fs25_colorMainDark"/>
+            <textSelectedColor value="$preset_fs25_colorMainDark"/>
+            <textDisabledColor value="$preset_colorDisabled"/>
+            <imageColor value="0 0 0 0"/>
+            <imageHighlightedColor value="0 0 0 0"/>
+            <imageFocusedColor value="0 0 0 0"/>
+            <imageDisabledColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ldze_roundBg" extends="fs25_settingsButtonBg">
+            <imageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <imagePressedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImagePressedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImagePressedColor value="$preset_fs25_colorMainHighlight"/>
+        </Profile>
+        <Profile name="ldze_roundBgDanger" extends="fs25_settingsButtonBg">
+            <imageColor value="0.55 0.1 0.08 1"/>
+            <startImageColor value="0.55 0.1 0.08 1"/>
+            <endImageColor value="0.55 0.1 0.08 1"/>
+            <imageFocusedColor value="0.8 0.15 0.1 1"/>
+            <imageHighlightedColor value="0.8 0.15 0.1 1"/>
+            <imageSelectedColor value="0.8 0.15 0.1 1"/>
+            <imagePressedColor value="0.8 0.15 0.1 1"/>
+            <startImageFocusedColor value="0.8 0.15 0.1 1"/>
+            <startImageHighlightedColor value="0.8 0.15 0.1 1"/>
+            <startImageSelectedColor value="0.8 0.15 0.1 1"/>
+            <startImagePressedColor value="0.8 0.15 0.1 1"/>
+            <endImageFocusedColor value="0.8 0.15 0.1 1"/>
+            <endImageHighlightedColor value="0.8 0.15 0.1 1"/>
+            <endImageSelectedColor value="0.8 0.15 0.1 1"/>
+            <endImagePressedColor value="0.8 0.15 0.1 1"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

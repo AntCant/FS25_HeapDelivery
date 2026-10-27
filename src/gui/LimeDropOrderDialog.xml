@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Order dialog, built from the same elements and profiles as the base game's RefillDialog -->
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg" id="dialogBgElement"/>
+
+    <GuiElement profile="ldz_orderDialogBg" id="dialogElement">
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+
+        <Bitmap profile="ldz_orderCircle">
+            <Bitmap profile="fs25_dialogQuestion"/>
+        </Bitmap>
+
+        <Text profile="ldz_orderTitle" id="dialogTitleElement" text=""/>
+        <Text profile="ldz_orderText" id="dialogTextElement" text=""/>
+
+        <Bitmap profile="ldz_orderFillTypeIcon" id="fillTypeIconElement"/>
+
+        <MultiTextOption profile="ldz_orderFillType" id="fillTypesElement"/>
+
+        <Button profile="ldz_orderStepLeft" id="stepDownButton" text="-" onClick="onClickStepDown">
+            <ThreePartBitmap profile="ldz_orderRoundBg"/>
+        </Button>
+        <OptionSlider profile="ldz_orderSlider" id="fillAmountsElement">
+            <Text profile="fs25_optionSliderText" name="text" id="fillAmountText"/>
+        </OptionSlider>
+        <Button profile="ldz_orderStepRight" id="stepUpButton" text="+" onClick="onClickStepUp">
+            <ThreePartBitmap profile="ldz_orderRoundBg"/>
+        </Button>
+
+        <GuiElement profile="ldz_bdBox" id="breakdownElement">
+            <Text profile="ldz_bdLabel" id="bdLimeLabel" text="" position="0px 0px"/>
+            <Text profile="ldz_bdValue" id="bdLimeValue" text="" position="0px 0px"/>
+            <Text profile="ldz_bdLabel" id="bdFeeLabel" text="" position="0px -28px"/>
+            <Text profile="ldz_bdValue" id="bdFeeValue" text="" position="0px -28px"/>
+            <Bitmap profile="ldz_bdLine"/>
+            <Text profile="ldz_bdTotalLabel" id="bdTotalLabel" text="" position="0px -66px"/>
+            <Text profile="ldz_bdTotalValue" id="bdTotalValue" text="" position="0px -66px"/>
+        </GuiElement>
+
+        <Text profile="ldz_orderWarning" id="warningElement" text="" visible="false">
+            <Bitmap profile="fs25_dialogWarningIcon"/>
+        </Text>
+
+        <BoxLayout profile="fs25_dialogButtonBox">
+            <Button profile="buttonOK" text="Order" onClick="onClickOk" id="yesButton"/>
+            <Bitmap profile="fs25_dialogButtonBoxSeparator"/>
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" id="noButton"/>
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ldz_orderDialogBg" extends="baseReference" with="anchorMiddleCenter">
+            <size value="900px 650px"/>
+        </Profile>
+
+        <Profile name="ldz_orderCircle" extends="fs25_dialogCircle" with="anchorTopCenter">
+            <position value="0px -30px"/>
+        </Profile>
+
+        <Profile name="ldz_orderTitle" extends="fs25_dialogTitle" with="anchorTopCenter">
+            <size value="840px 40px"/>
+            <position value="0px -150px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ldz_orderText" extends="fs25_refillDialogText" with="anchorTopCenter">
+            <size value="840px 50px"/>
+            <position value="0px -195px"/>
+            <textAlignment value="center"/>
+            <textWrapWidth value="840px"/>
+            <textMaxNumLines value="2"/>
+        </Profile>
+
+        <Profile name="ldz_orderFillType" extends="fs25_dialogMultiTextOption" with="anchorTopCenter">
+            <position value="0px -320px"/>
+        </Profile>
+
+        <!-- icon of the selected product, above the product selector -->
+        <Profile name="ldz_orderFillTypeIcon" extends="baseReference" with="anchorTopCenter">
+            <size value="56px 56px"/>
+            <position value="0px -256px"/>
+            <imageSliceId value="noSlice"/>
+            <imageColor value="1 1 1 1"/>
+        </Profile>
+
+        <Profile name="ldz_orderSlider" extends="fs25_optionSlider" with="anchorTopCenter">
+            <position value="0px -380px"/>
+        </Profile>
+
+        <!-- step buttons just outside the slider ends (the slider is 280px wide, 36px tall) -->
+        <Profile name="ldz_orderStepButton" extends="emptyPanel" with="anchorTopCenter">
+            <size value="36px 36px"/>
+            <textSize value="22px"/>
+            <textBold value="true"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <textHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <textFocusedColor value="$preset_fs25_colorMainDark"/>
+            <textSelectedColor value="$preset_fs25_colorMainDark"/>
+            <textDisabledColor value="$preset_colorDisabled"/>
+            <imageColor value="0 0 0 0"/>
+            <imageHighlightedColor value="0 0 0 0"/>
+            <imageFocusedColor value="0 0 0 0"/>
+            <imageDisabledColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ldz_orderStepLeft" extends="ldz_orderStepButton">
+            <position value="-170px -380px"/>
+        </Profile>
+
+        <Profile name="ldz_orderStepRight" extends="ldz_orderStepButton">
+            <position value="170px -380px"/>
+        </Profile>
+
+        <!-- receipt under the slider: Lime / Delivery (5%) / line / Total -->
+        <Profile name="ldz_bdBox" extends="emptyPanel" with="anchorTopCenter">
+            <size value="360px 100px"/>
+            <position value="0px -457px"/>
+        </Profile>
+
+        <Profile name="ldz_bdLabel" extends="baseReference" with="anchorTopLeft">
+            <size value="200px 26px"/>
+            <textSize value="18px"/>
+            <textColor value="1 1 1 0.8"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+        </Profile>
+
+        <Profile name="ldz_bdValue" extends="ldz_bdLabel" with="anchorTopRight">
+            <size value="160px 26px"/>
+            <textAlignment value="right"/>
+        </Profile>
+
+        <Profile name="ldz_bdLine" extends="baseReference" with="anchorTopLeft">
+            <size value="360px 2px"/>
+            <position value="0px -60px"/>
+            <imageSliceId value="gui.progressbar_middle"/>
+            <imageColor value="1 1 1 0.35"/>
+        </Profile>
+
+        <Profile name="ldz_bdTotalLabel" extends="ldz_bdLabel">
+            <textBold value="true"/>
+            <textColor value="1 1 1 1"/>
+        </Profile>
+
+        <Profile name="ldz_bdTotalValue" extends="ldz_bdValue">
+            <textBold value="true"/>
+            <textColor value="1 1 1 1"/>
+        </Profile>
+
+        <Profile name="ldz_orderWarning" extends="fs25_dialogWarningText" with="anchorTopCenter">
+            <position value="0px -457px"/>
+        </Profile>
+
+        <Profile name="ldz_orderRoundBg" extends="fs25_settingsButtonBg">
+            <imageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <imagePressedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImagePressedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImagePressedColor value="$preset_fs25_colorMainHighlight"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

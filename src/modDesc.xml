@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="115">
+    <author>AntCant</author>
+    <version>1.0.0.0</version>
+    <iconFilename>icon_heapDelivery.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <title>
+        <en>Heap Delivery</en>
+        <de>Haufenlieferung</de>
+        <fr>Livraison en tas</fr>
+    </title>
+
+    <description>
+        <en><![CDATA[Order bulk goods and have them delivered as a heap on your own land.
+
+Mark a delivery zone, choose the product and the amount, and after the delivery time the heap is placed in the zone.
+
+Products: lime, manure, straw, hay and grass.
+
+Features:
+- Open the menu from anywhere on the map with Alt + L (on foot).
+- Delivery zones in three sizes, placed on land your farm owns.
+- Prices follow the in-game price of each product, plus a delivery fee.
+- On slopes, whatever the zone cannot hold is placed right next to it, so you always receive the full amount.
+- Delivery history, map markers and a built-in "How it works" guide.
+- Delivery time and fee can be changed in the game settings.
+- Multiplayer supported.]]></en>
+        <de><![CDATA[Bestelle Schüttgut und lass es dir als Haufen auf dein eigenes Land liefern.
+
+Markiere eine Lieferzone, wähle Produkt und Menge, und nach der Lieferzeit liegt der Haufen in der Zone.
+
+Produkte: Kalk, Mist, Stroh, Heu und Gras.
+
+Funktionen:
+- Das Menü von überall auf der Karte mit Alt + L öffnen (zu Fuß).
+- Lieferzonen in drei Größen, auf Land, das deinem Hof gehört.
+- Preise folgen dem Spielpreis des Produkts, plus eine Liefergebühr.
+- Am Hang wird, was die Zone nicht hält, direkt daneben abgeladen, so bekommst du immer die volle Menge.
+- Lieferverlauf, Kartenmarkierungen und eine eingebaute Anleitung "So funktioniert es".
+- Lieferzeit und Gebühr lassen sich in den Spieleinstellungen ändern.
+- Mehrspieler wird unterstützt.]]></de>
+        <fr><![CDATA[Commandez des produits en vrac et faites-les livrer en tas sur vos propres terres.
+
+Marquez une zone de livraison, choisissez le produit et la quantité, et après le délai de livraison le tas est déposé dans la zone.
+
+Produits : chaux, fumier, paille, foin et herbe.
+
+Fonctionnalités :
+- Ouvrez le menu de n'importe où sur la carte avec Alt + L (à pied).
+- Zones de livraison en trois tailles, placées sur les terres de votre ferme.
+- Les prix suivent le prix du produit dans le jeu, plus des frais de livraison.
+- En pente, ce que la zone ne peut pas contenir est déposé juste à côté, vous recevez donc toujours la quantité complète.
+- Historique des livraisons, marqueurs sur la carte et guide intégré "Comment ça marche".
+- Le délai et les frais de livraison se règlent dans les paramètres de jeu.
+- Multijoueur pris en charge.]]></fr>
+        <it><![CDATA[Ordina prodotti sfusi e falli consegnare in un cumulo sul tuo terreno.
+
+Segna una zona di consegna, scegli prodotto e quantità e, dopo il tempo di consegna, il cumulo viene scaricato nella zona.
+
+Prodotti: calce, letame, paglia, fieno ed erba.
+
+Caratteristiche:
+- Apri il menu da qualsiasi punto della mappa con Alt + L (a piedi).
+- Zone di consegna in tre dimensioni, sui terreni della tua fattoria.
+- I prezzi seguono il prezzo del prodotto nel gioco, più un costo di consegna.
+- In pendenza, ciò che la zona non riesce a contenere viene scaricato proprio accanto, così ricevi sempre la quantità completa.
+- Cronologia delle consegne, indicatori sulla mappa e guida integrata "Come funziona".
+- Tempo e costo di consegna si possono modificare nelle impostazioni di gioco.
+- Multigiocatore supportato.]]></it>
+    </description>
+
+    <l10n filenamePrefix="l10n/l10n"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/LimeDropZone.lua"/>
+        <sourceFile filename="scripts/LimeDropEvents.lua"/>
+        <sourceFile filename="scripts/LimeDropMenuDialog.lua"/>
+        <sourceFile filename="scripts/LimeDropOrderDialog.lua"/>
+        <sourceFile filename="scripts/LimeDropSizeDialog.lua"/>
+        <sourceFile filename="scripts/LimeDropHistoryDialog.lua"/>
+        <sourceFile filename="scripts/LimeDropEditDialog.lua"/>
+        <sourceFile filename="scripts/LimeDropHelpDialog.lua"/>
+    </extraSourceFiles>
+
+    <actions>
+        <action name="LIMEDROP_MENU" category="ONFOOT VEHICLE" axisType="HALF"/>
+        <action name="LIMEDROP_PLACE" category="ONFOOT" axisType="HALF"/>
+        <action name="LIMEDROP_PLACE_CANCEL" category="ONFOOT" axisType="HALF"/>
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="LIMEDROP_MENU">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_l"/>
+        </actionBinding>
+        <actionBinding action="LIMEDROP_PLACE">
+            <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_LEFT"/>
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_1"/>
+        </actionBinding>
+        <actionBinding action="LIMEDROP_PLACE_CANCEL">
+            <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_RIGHT"/>
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_2"/>
+        </actionBinding>
+    </inputBinding>
+</modDesc>

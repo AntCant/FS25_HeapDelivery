@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Size dialog, same building blocks as the order dialog (base game RefillDialog look) -->
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg" id="dialogBgElement"/>
+
+    <GuiElement profile="ldzs_dialogBg" id="dialogElement">
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+
+        <Bitmap profile="ldzs_circle">
+            <Bitmap profile="fs25_dialogQuestion"/>
+        </Bitmap>
+
+        <Text profile="ldzs_title" id="dialogTitleElement" text=""/>
+        <Text profile="ldzs_text" id="dialogTextElement" text=""/>
+
+        <MultiTextOption profile="ldzs_sizeOption" id="sizesElement"/>
+
+        <Text profile="ldzs_info" id="infoElement" text=""/>
+
+        <BoxLayout profile="fs25_dialogButtonBox">
+            <Button profile="buttonOK" text="Select" onClick="onClickOk" id="yesButton"/>
+            <Bitmap profile="fs25_dialogButtonBoxSeparator"/>
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" id="noButton"/>
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ldzs_dialogBg" extends="baseReference" with="anchorMiddleCenter">
+            <size value="900px 440px"/>
+        </Profile>
+
+        <Profile name="ldzs_circle" extends="fs25_dialogCircle" with="anchorTopCenter">
+            <position value="0px -30px"/>
+        </Profile>
+
+        <Profile name="ldzs_title" extends="fs25_dialogTitle" with="anchorTopCenter">
+            <size value="840px 40px"/>
+            <position value="0px -150px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ldzs_text" extends="fs25_refillDialogText" with="anchorTopCenter">
+            <size value="840px 50px"/>
+            <position value="0px -195px"/>
+            <textAlignment value="center"/>
+            <textWrapWidth value="840px"/>
+            <textMaxNumLines value="2"/>
+        </Profile>
+
+        <Profile name="ldzs_sizeOption" extends="fs25_dialogMultiTextOption" with="anchorTopCenter">
+            <position value="0px -262px"/>
+        </Profile>
+
+        <Profile name="ldzs_info" extends="fs25_refillDialogText" with="anchorTopCenter">
+            <size value="840px 30px"/>
+            <position value="0px -315px"/>
+            <textAlignment value="center"/>
+            <textColor value="1 1 1 0.7"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

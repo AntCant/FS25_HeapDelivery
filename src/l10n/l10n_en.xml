@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="input_LIMEDROP_MENU" text="Heap Delivery menu"/>
+
+        <text name="limeDrop_zoneDefaultName" text="Delivery zone #%d"/>
+        <text name="limeDrop_zonePending" text="Incoming: %s in %s"/>
+
+        <text name="limeDrop_notify_zoneAdded" text="%s created"/>
+        <text name="limeDrop_notify_zoneRemoved" text="%s removed"/>
+        <text name="limeDrop_notify_zoneRenamed" text="Zone renamed to %s"/>
+        <text name="limeDrop_notify_ordered" text="%s ordered: %s to %s, arriving in %s"/>
+        <text name="limeDrop_notify_delivered" text="%s delivered: %s at %s"/>
+        <text name="limeDrop_notify_refund" text="Only %s fit in the zone. %s refunded"/>
+        <text name="limeDrop_notify_markersShown" text="Delivery zone markers shown"/>
+        <text name="limeDrop_notify_markersHidden" text="Delivery zone markers hidden"/>
+
+        <text name="limeDrop_warning_tooClose" text="Too close to another delivery zone"/>
+        <text name="limeDrop_warning_maxZones" text="Maximum of %d delivery zones reached"/>
+        <text name="limeDrop_warning_noMoney" text="Not enough money for this order"/>
+        <text name="limeDrop_warning_orderPending" text="A delivery is already on its way to %s"/>
+        <text name="limeDrop_warning_noFarm" text="You need to join a farm first"/>
+        <text name="limeDrop_warning_noHeaps" text="This map does not allow heaps on the ground"/>
+
+        <text name="limeDrop_menu_title" text="Heap Delivery"/>
+        <text name="limeDrop_menu_text" text="Order a delivery for a spot, see its deliveries or edit it. Each spot takes one delivery at a time."/>
+        <text name="limeDrop_menu_incoming" text="Incoming %s, arrives in %s"/>
+
+        <text name="limeDrop_button_order" text="Order"/>
+        <text name="limeDrop_button_rename" text="Rename"/>
+        <text name="limeDrop_button_remove" text="Remove"/>
+
+        <text name="limeDrop_rename_prompt" text="Short description shown after %s - (for example front entrance)"/>
+        <text name="limeDrop_rename_confirm" text="Rename"/>
+        <text name="limeDrop_remove_title" text="Remove delivery zone"/>
+        <text name="limeDrop_remove_text" text="Remove %s? Deliveries already ordered will still arrive."/>
+
+        <text name="limeDrop_button_size" text="Size"/>
+        <text name="limeDrop_button_select" text="Select"/>
+        <text name="limeDrop_menu_full" text="Zone is full"/>
+        <text name="limeDrop_notify_zoneResized" text="%s is now %s"/>
+        <text name="limeDrop_sizes_text" text="On flat ground each size holds a set amount, depending on the product. On a slope part of a delivery may be tipped right next to the zone."/>
+        <text name="limeDrop_size_label" text="%s m circle"/>
+
+        <text name="input_LIMEDROP_PLACE" text="Place delivery zone"/>
+        <text name="input_LIMEDROP_PLACE_CANCEL" text="Cancel placing zone"/>
+        <text name="limeDrop_button_newZone" text="New zone"/>
+        <text name="limeDrop_button_hideMarkers" text="Hide markers"/>
+        <text name="limeDrop_button_showMarkers" text="Show markers"/>
+        <text name="limeDrop_menu_empty" text="No delivery zones yet"/>
+        <text name="limeDrop_menu_emptyInfo" text="Use New zone below, then aim where the zone should go"/>
+        <text name="limeDrop_place_label" text="%s: %s"/>
+        <text name="limeDrop_place_hint" text="Aim where the zone should go, then place it"/>
+        <text name="limeDrop_place_tooFar" text="Too far away, come closer"/>
+        <text name="limeDrop_place_cancelled" text="Placing the delivery zone was cancelled"/>
+
+        <text name="limeDrop_warning_onFootOnly" text="Get out of the vehicle to use Heap Delivery"/>
+        <text name="limeDrop_warning_handsBusy" text="Put away what you are holding first"/>
+        <text name="limeDrop_place_notOwned" text="Only on land your farm owns"/>
+        <text name="limeDrop_place_cancelledVehicle" text="Placing the delivery zone was cancelled because you got into a vehicle"/>
+        <text name="limeDrop_place_cancelledHands" text="Placing the delivery zone was cancelled because you picked something up"/>
+        <text name="limeDrop_size_notOwned" text="goes onto land you do not own"/>
+        <text name="limeDrop_menu_notOwned" text="not on your land anymore"/>
+        <text name="limeDrop_notify_cancelledNotOwned" text="Delivery to %s cancelled because your farm no longer owns that land. %s refunded"/>
+        <text name="limeDrop_fieldLabel" text="Field %d%s"/>
+        <text name="limeDrop_farmlandLabel" text="Farmland %d%s"/>
+        <text name="limeDrop_nameWithDescription" text="%s - %s"/>
+        <text name="limeDrop_order_text" text="Select the product and amount to deliver. It arrives about %s after ordering. The price includes a %s delivery fee."/>
+        <text name="limeDrop_order_amount" text="%s (%s)"/>
+        <text name="limeDrop_order_full" text="There is no room left in this spot."/>
+        <text name="limeDrop_time_minute" text="%d minute"/>
+        <text name="limeDrop_time_minutes" text="%d minutes"/>
+        <text name="limeDrop_time_second" text="%d second"/>
+        <text name="limeDrop_time_seconds" text="%d seconds"/>
+        <text name="limeDrop_settings_title" text="Heap Delivery"/>
+        <text name="limeDrop_setting_delay_title" text="Heap delivery time"/>
+        <text name="limeDrop_setting_delay_tooltip" text="How long after ordering a delivery arrives at its spot (real time, paused with the game)"/>
+        <text name="limeDrop_setting_fee_title" text="Heap delivery fee"/>
+        <text name="limeDrop_setting_fee_tooltip" text="Added on top of the product price for every delivery, as a percentage of the product cost"/>
+        <text name="limeDrop_size_currentInfo" text="This is the current size"/>
+        <text name="limeDrop_size_blockedInfo" text="Not possible here: %s"/>
+        <text name="limeDrop_button_history" text="History"/>
+        <text name="limeDrop_history_text" text="Deliveries to this spot, newest first (last %d)."/>
+        <text name="limeDrop_history_empty" text="No deliveries yet"/>
+        <text name="limeDrop_history_emptyInfo" text="Finished deliveries show up here"/>
+        <text name="limeDrop_history_time" text="Day %d, %02d:%02d"/>
+        <text name="limeDrop_history_delivered" text="delivered %s"/>
+        <text name="limeDrop_history_cancelled" text="cancelled (land sold)"/>
+        <text name="limeDrop_size_blocked" text="overlaps another zone"/>
+        <text name="limeDrop_order_fee" text="Delivery (%s)"/>
+        <text name="limeDrop_order_total" text="Total"/>
+        <text name="limeDrop_button_edit" text="Edit"/>
+        <text name="limeDrop_edit_text" text="Change the size or name of this spot, or remove it."/>
+        <text name="limeDrop_order_otherProduct" text="This spot already has %s on it. Different products cannot share a heap."/>
+        <text name="limeDrop_menu_zoneEmpty" text="empty"/>
+        <text name="limeDrop_menu_contents" text="%s %s"/>
+        <text name="limeDrop_place_slope" text="Slope: %.1f°"/>
+        <text name="limeDrop_place_steep" text="steep, part of a delivery may be tipped next to the zone"/>
+        <text name="limeDrop_notify_deliveredSpill" text="%s delivered: %s at %s (%s placed next to the zone, the ground was too steep)"/>
+        <text name="limeDrop_button_help" text="How it works"/>
+        <text name="limeDrop_help_header" text="How it works"/>
+        <text name="limeDrop_help_start_title" text="Getting started"/>
+        <text name="limeDrop_help_start_1" text="Heap Delivery lets you order bulk products such as lime, manure or straw and have them dropped as a heap on a spot you choose. Open this menu with Alt+L while on foot."/>
+        <text name="limeDrop_help_start_2" text="Press New zone, look at the ground where the heap should go and left click to place the zone. Then press Order on its row, pick the product and the amount, and confirm."/>
+        <text name="limeDrop_help_start_3" text="The money is taken when you order. After the delivery time the heap appears in the zone and you get a message."/>
+        <text name="limeDrop_help_place_title" text="Placing a zone"/>
+        <text name="limeDrop_help_place_1" text="A circle follows where you look, up to 60 m away. Green means it can go there, red tells you why not. Left click places it, right click cancels."/>
+        <text name="limeDrop_help_place_2" text="A zone must lie fully on land your farm owns and stay 1 m away from your other zones. Each farm can have up to %d zones."/>
+        <text name="limeDrop_help_place_3" text="While you move the circle, the slope of the ground under it is shown. On steep ground it warns you that part of a delivery may be tipped next to the zone (see Slopes)."/>
+        <text name="limeDrop_help_place_4" text="Placing stops if you get into a vehicle, pick up a tool or an object, or open a menu. Zones are named after their field (Field 3, a second one Field 3a); Rename adds a description."/>
+        <text name="limeDrop_help_sizes_title" text="Sizes and capacity"/>
+        <text name="limeDrop_help_sizes_1" text="Zones are circles 4, 6 or 8 m wide. New zones use the last size you picked. Change a zone with Edit, then Size."/>
+        <text name="limeDrop_help_sizes_2" text="On flat ground each size holds a fixed amount:"/>
+        <text name="limeDrop_help_sizes_3" text="The order slider offers the room that is left: the capacity minus what already lies in the zone."/>
+        <text name="limeDrop_help_order_title" text="Ordering and prices"/>
+        <text name="limeDrop_help_order_1" text="Order opens the order screen of a zone. Pick the product with the selector and the amount with the slider or the - and + buttons, in steps of 500 L."/>
+        <text name="limeDrop_help_order_2" text="The price is the current price of the product in the game, including the economy difficulty, plus a delivery fee. The receipt shows both."/>
+        <text name="limeDrop_help_order_3" text="Right now a delivery takes %s and the fee is %s."/>
+        <text name="limeDrop_help_order_4" text="Each zone takes one delivery at a time. Order stays grey until it arrives, and the zone list counts down the time left."/>
+        <text name="limeDrop_help_slopes_title" text="Slopes"/>
+        <text name="limeDrop_help_slopes_1" text="Heaps are formed by the game itself, and it can only keep a heap on ground that is not too steep. Each product piles a little differently."/>
+        <text name="limeDrop_help_slopes_2" text="On a slope the zone may hold only part of an order. The rest is tipped right next to the zone, on your own land and away from your other zones, so you still get the full amount. The delivery message tells you how much went next to the zone."/>
+        <text name="limeDrop_help_slopes_3" text="Only when all the ground around is very steep is the remaining amount refunded."/>
+        <text name="limeDrop_help_slopes_4" text="A heap on a slope can look bigger than one on flat ground. It is the same amount: it spreads wider and stands taller on the downhill side."/>
+        <text name="limeDrop_help_products_title" text="Products"/>
+        <text name="limeDrop_help_products_1" text="You can order: %s. The icon above the product selector shows which one is picked."/>
+        <text name="limeDrop_help_products_2" text="Different products cannot share a heap. A zone only takes the product already lying in it until that heap is used up."/>
+        <text name="limeDrop_help_products_3" text="Products pile differently, so how much fits depends on the product (see Sizes and capacity). Straw, hay and grass are light and fluffy and need much more room per liter."/>
+        <text name="limeDrop_help_history_title" text="History and refunds"/>
+        <text name="limeDrop_help_history_1" text="History shows the last %d deliveries of a zone: when, which product, how much arrived, the amount paid in red and any refund in green."/>
+        <text name="limeDrop_help_history_2" text="Refunds include their share of the delivery fee. If you sell the land before a delivery arrives, the whole order is refunded."/>
+        <text name="limeDrop_help_history_3" text="The game places heaps in small whole pieces, so the last few liters of an order are topped up for free instead of being refunded."/>
+        <text name="limeDrop_help_settings_title" text="Settings and multiplayer"/>
+        <text name="limeDrop_help_settings_1" text="Delivery time and delivery fee are under Settings, Game Settings, Heap Delivery. They are saved with the savegame; in multiplayer only the host or an admin can change them."/>
+        <text name="limeDrop_help_settings_2" text="Hide markers in this menu hides the zone circles and labels for you only."/>
+        <text name="limeDrop_help_settings_3" text="Zones belong to your farm, and only your farm can order for them. Descriptions typed with Rename go through the game's profanity filter."/>
+    </texts>
+</l10n>

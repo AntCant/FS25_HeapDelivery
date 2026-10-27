@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Delivery history of one spot, a popup over the zone list like the order and size dialogs -->
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg" id="dialogBgElement"/>
+
+    <GuiElement profile="ldzh_dialogBg" id="dialogElement">
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+
+        <Text profile="ldzh_title" id="headerTextElement" text=""/>
+        <Text profile="ldzh_text" id="subHeaderTextElement" text=""/>
+
+        <GuiElement profile="ldzh_contentBox" id="contentBoxElement">
+            <Bitmap profile="ldzh_topClipper" name="topClipper" visible="false" position="0px 2px"/>
+            <Bitmap profile="ldzh_bottomClipper" name="bottomClipper" visible="false" position="0px -2px"/>
+
+            <ScrollingLayout profile="ldzh_scrollingLayout" id="scrollingLayoutElement" topClipperElementName="topClipper" bottomClipperElementName="bottomClipper">
+                <Bitmap profile="ldzh_item" id="scrollingLayoutItem">
+                    <Bitmap profile="ldzh_itemIcon" name="icon"/>
+                    <Text profile="ldzh_itemTitle" name="title" text=""/>
+                    <Text profile="ldzh_itemInfo" name="info" text=""/>
+                    <Text profile="ldzh_itemRight" name="right" text=""/>
+                    <Text profile="ldzh_itemRightSub" name="rightSub" text=""/>
+                </Bitmap>
+            </ScrollingLayout>
+
+            <ThreePartBitmap profile="ldzh_sliderBox" position="826px 0px" size="12px 340px">
+                <Slider profile="fs25_listSlider" size="6px 334px" dataElementId="scrollingLayoutElement" handleFocus="false"/>
+            </ThreePartBitmap>
+        </GuiElement>
+
+        <BoxLayout profile="fs25_dialogButtonBox">
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" id="backButton"/>
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ldzh_dialogBg" extends="baseReference" with="anchorMiddleCenter">
+            <size value="900px 580px"/>
+        </Profile>
+
+        <Profile name="ldzh_title" extends="fs25_dialogTitle" with="anchorTopCenter">
+            <size value="840px 40px"/>
+            <position value="0px -30px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ldzh_text" extends="fs25_refillDialogText" with="anchorTopCenter">
+            <size value="840px 30px"/>
+            <position value="0px -75px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ldzh_contentBox" extends="emptyPanel" with="anchorTopCenter">
+            <size value="840px 340px"/>
+            <position value="0px -120px"/>
+        </Profile>
+
+        <Profile name="ldzh_topClipper" extends="baseReference" with="anchorStretchingYStretchingX pivotTopCenter">
+            <size value="100% 60px"/>
+            <imageRotation value="180"/>
+            <imageSliceId value="gui.divider_1"/>
+        </Profile>
+
+        <Profile name="ldzh_bottomClipper" extends="ldzh_topClipper" with="pivotBottomCenter">
+            <imageRotation value="0"/>
+        </Profile>
+
+        <Profile name="ldzh_scrollingLayout" extends="emptyPanel" with="anchorTopLeft">
+            <size value="820px 340px"/>
+            <position value="0px 0px"/>
+            <flowDirection value="vertical"/>
+            <autoValidateLayout value="true"/>
+        </Profile>
+
+        <Profile name="ldzh_sliderBox" extends="fs25_listSliderBox" with="anchorTopLeft">
+        </Profile>
+
+        <Profile name="ldzh_item" extends="emptyPanel">
+            <size value="810px 60px"/>
+            <margin value="0px 3px 0px 3px"/>
+            <imageSliceId value="gui.progressbar_middle"/>
+            <imageColor value="1 1 1 0.04"/>
+        </Profile>
+
+        <Profile name="ldzh_itemIcon" extends="baseReference" with="anchorMiddleLeft">
+            <size value="44px 44px"/>
+            <position value="14px 0px"/>
+            <imageSliceId value="noSlice"/>
+            <imageColor value="1 1 1 1"/>
+        </Profile>
+
+        <Profile name="ldzh_itemTitle" extends="emptyPanel" with="anchorTopLeft">
+            <size value="520px 28px"/>
+            <position value="70px -5px"/>
+            <textSize value="19px"/>
+            <textBold value="true"/>
+            <textColor value="1 1 1 1"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+        </Profile>
+
+        <Profile name="ldzh_itemInfo" extends="emptyPanel" with="anchorTopLeft">
+            <size value="500px 22px"/>
+            <position value="70px -33px"/>
+            <textSize value="15px"/>
+            <textColor value="1 1 1 0.6"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+        </Profile>
+
+        <Profile name="ldzh_itemRight" extends="emptyPanel" with="anchorTopRight">
+            <size value="220px 28px"/>
+            <position value="-18px -5px"/>
+            <textSize value="19px"/>
+            <textBold value="true"/>
+            <textColor value="1 1 1 1"/>
+            <textAlignment value="right"/>
+            <textVerticalAlignment value="middle"/>
+        </Profile>
+
+        <Profile name="ldzh_itemRightSub" extends="emptyPanel" with="anchorTopRight">
+            <size value="220px 22px"/>
+            <position value="-18px -33px"/>
+            <textSize value="16px"/>
+            <textBold value="true"/>
+            <textAlignment value="right"/>
+            <textVerticalAlignment value="middle"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

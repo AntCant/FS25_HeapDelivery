@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg" id="dialogBgElement"/>
+
+    <GuiElement profile="ldz_dialogBg" id="dialogElement">
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+
+        <Bitmap profile="ldz_headerBox">
+            <Text profile="ldz_headerText" id="headerTextElement" text="Lime drop zones"/>
+            <Text profile="ldz_subHeaderText" id="subHeaderTextElement" text=""/>
+        </Bitmap>
+
+        <GuiElement profile="ldz_contentBox" id="contentBoxElement">
+            <Bitmap profile="ldz_topClipper" name="topClipper" visible="false" position="0px 2px"/>
+            <Bitmap profile="ldz_bottomClipper" name="bottomClipper" visible="false" position="0px -2px"/>
+
+            <ScrollingLayout profile="ldz_scrollingLayout" id="scrollingLayoutElement" topClipperElementName="topClipper" bottomClipperElementName="bottomClipper">
+                <BoxLayout profile="ldz_item" id="scrollingLayoutItem">
+                    <GuiElement profile="ldz_itemTextBox">
+                        <Text profile="ldz_itemTitle" name="title" text="Zone"/>
+                        <Text profile="ldz_itemInfo" name="info" text=""/>
+                        <Text profile="ldz_itemInfo" name="status" text=""/>
+                    </GuiElement>
+                    <Button profile="ldz_rowButton" name="button1" text="Order">
+                        <ThreePartBitmap profile="ldz_roundBg"/>
+                    </Button>
+                    <Button profile="ldz_rowButton" name="button2" text="History">
+                        <ThreePartBitmap profile="ldz_roundBg"/>
+                    </Button>
+                    <Button profile="ldz_rowButton" name="button3" text="Edit">
+                        <ThreePartBitmap profile="ldz_roundBg"/>
+                    </Button>
+                </BoxLayout>
+            </ScrollingLayout>
+
+            <ThreePartBitmap profile="ldz_sliderBox" position="966px 0px" size="12px 480px">
+                <Slider profile="fs25_listSlider" size="6px 474px" dataElementId="scrollingLayoutElement" handleFocus="false"/>
+            </ThreePartBitmap>
+        </GuiElement>
+
+        <BoxLayout profile="fs25_dialogButtonBox">
+            <Button profile="buttonActivate" text="New zone" onClick="onClickNewZone" id="newZoneButton"/>
+            <Button profile="buttonCancel" text="Hide markers" onClick="onClickToggleMarkers" id="markersButton"/>
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" id="backButton"/>
+        </BoxLayout>
+
+        <!-- own box on the left end of the bar, away from the other buttons -->
+        <BoxLayout profile="ldz_helpButtonBox">
+            <Button profile="buttonExtra1" text="How it works" onClick="onClickHelp" id="helpButton"/>
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ldz_helpButtonBox" extends="fs25_dialogButtonBox">
+            <alignmentX value="left"/>
+            <imageColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ldz_dialogBg" extends="baseReference" with="anchorMiddleCenter">
+            <size value="1020px 700px"/>
+        </Profile>
+
+        <Profile name="ldz_headerBox" extends="emptyPanel" with="anchorTopLeft">
+            <size value="980px 92px"/>
+            <position value="20px -20px"/>
+        </Profile>
+
+        <Profile name="ldz_headerText" extends="baseReference" with="anchorTopLeft">
+            <size value="980px 40px"/>
+            <position value="0px 0px"/>
+            <textSize value="26px"/>
+            <textBold value="true"/>
+            <textUpperCase value="true"/>
+        </Profile>
+
+        <Profile name="ldz_subHeaderText" extends="baseReference" with="anchorTopLeft">
+            <size value="980px 50px"/>
+            <position value="0px -42px"/>
+            <textSize value="16px"/>
+            <textColor value="1 1 1 0.7"/>
+            <textWrapWidth value="960px"/>
+            <textMaxNumLines value="2"/>
+            <textVerticalAlignment value="top"/>
+        </Profile>
+
+        <Profile name="ldz_contentBox" extends="emptyPanel" with="anchorTopCenter">
+            <size value="980px 480px"/>
+            <position value="0px -104px"/>
+        </Profile>
+
+        <Profile name="ldz_topClipper" extends="baseReference" with="anchorStretchingYStretchingX pivotTopCenter">
+            <size value="100% 60px"/>
+            <imageRotation value="180"/>
+            <imageSliceId value="gui.divider_1"/>
+        </Profile>
+
+        <Profile name="ldz_bottomClipper" extends="ldz_topClipper" with="pivotBottomCenter">
+            <imageRotation value="0"/>
+        </Profile>
+
+        <Profile name="ldz_scrollingLayout" extends="emptyPanel" with="anchorTopLeft">
+            <size value="960px 480px"/>
+            <position value="0px 0px"/>
+            <flowDirection value="vertical"/>
+            <autoValidateLayout value="true"/>
+        </Profile>
+
+        <Profile name="ldz_sliderBox" extends="fs25_listSliderBox" with="anchorTopLeft">
+        </Profile>
+
+        <Profile name="ldz_item" extends="emptyPanel">
+            <size value="950px 64px"/>
+            <margin value="0px 4px 0px 4px"/>
+            <imageSliceId value="gui.progressbar_middle"/>
+            <imageColor value="1 1 1 0.04"/>
+            <flowDirection value="horizontal"/>
+            <alignmentX value="left"/>
+            <alignmentY value="middle"/>
+        </Profile>
+
+        <Profile name="ldz_itemTextBox" extends="emptyPanel">
+            <size value="512px 64px"/>
+        </Profile>
+
+        <Profile name="ldz_itemTitle" extends="emptyPanel" with="anchorTopLeft">
+            <size value="480px 30px"/>
+            <position value="20px -6px"/>
+            <textSize value="20px"/>
+            <textBold value="true"/>
+            <textColor value="1 1 1 1"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+        </Profile>
+
+        <Profile name="ldz_itemInfo" extends="emptyPanel" with="anchorTopLeft">
+            <size value="480px 22px"/>
+            <position value="20px -36px"/>
+            <textSize value="15px"/>
+            <textColor value="1 1 1 0.6"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+        </Profile>
+
+        <Profile name="ldz_rowButton" extends="emptyPanel">
+            <size value="134px 40px"/>
+            <margin value="5px 0px 5px 0px"/>
+            <textSize value="16px"/>
+            <textBold value="true"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <textHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <textFocusedColor value="$preset_fs25_colorMainDark"/>
+            <textSelectedColor value="$preset_fs25_colorMainDark"/>
+            <textDisabledColor value="$preset_colorDisabled"/>
+            <imageColor value="0 0 0 0"/>
+            <imageHighlightedColor value="0 0 0 0"/>
+            <imageFocusedColor value="0 0 0 0"/>
+            <imageDisabledColor value="0 0 0 0"/>
+        </Profile>
+
+
+        <Profile name="ldz_roundBg" extends="fs25_settingsButtonBg">
+            <imageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <imagePressedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImagePressedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImagePressedColor value="$preset_fs25_colorMainHighlight"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

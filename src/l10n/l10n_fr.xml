@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="input_LIMEDROP_MENU" text="Menu Heap Delivery"/>
+        <text name="limeDrop_zoneDefaultName" text="Zone de livraison #%d"/>
+        <text name="limeDrop_zonePending" text="En route : %s dans %s"/>
+        <text name="limeDrop_notify_zoneAdded" text="%s créée"/>
+        <text name="limeDrop_notify_zoneRemoved" text="%s supprimée"/>
+        <text name="limeDrop_notify_zoneRenamed" text="Zone renommée en %s"/>
+        <text name="limeDrop_notify_ordered" text="%s commandé : %s pour %s, arrivée dans %s"/>
+        <text name="limeDrop_notify_delivered" text="%s livré : %s à %s"/>
+        <text name="limeDrop_notify_refund" text="Seulement %s ont tenu dans la zone. %s remboursés"/>
+        <text name="limeDrop_notify_markersShown" text="Marqueurs des zones de livraison affichés"/>
+        <text name="limeDrop_notify_markersHidden" text="Marqueurs des zones de livraison masqués"/>
+        <text name="limeDrop_warning_tooClose" text="Trop près d'une autre zone de livraison"/>
+        <text name="limeDrop_warning_maxZones" text="Maximum de %d zones de livraison atteint"/>
+        <text name="limeDrop_warning_noMoney" text="Pas assez d'argent pour cette commande"/>
+        <text name="limeDrop_warning_orderPending" text="Une livraison est déjà en route vers %s"/>
+        <text name="limeDrop_warning_noFarm" text="Tu dois d'abord rejoindre une ferme"/>
+        <text name="limeDrop_warning_noHeaps" text="Cette carte n'autorise pas les tas au sol"/>
+        <text name="limeDrop_menu_title" text="Heap Delivery"/>
+        <text name="limeDrop_menu_text" text="Commande une livraison pour un emplacement, consulte ses livraisons ou modifie-le. Une seule livraison à la fois par emplacement."/>
+        <text name="limeDrop_menu_incoming" text="%s en route, arrivée dans %s"/>
+        <text name="limeDrop_button_order" text="Commander"/>
+        <text name="limeDrop_button_rename" text="Renommer"/>
+        <text name="limeDrop_button_remove" text="Supprimer"/>
+        <text name="limeDrop_rename_prompt" text="Courte description affichée après %s - (par exemple entrée avant)"/>
+        <text name="limeDrop_rename_confirm" text="Renommer"/>
+        <text name="limeDrop_remove_title" text="Supprimer la zone de livraison"/>
+        <text name="limeDrop_remove_text" text="Supprimer %s ? Les livraisons déjà commandées arriveront quand même."/>
+        <text name="limeDrop_button_size" text="Taille"/>
+        <text name="limeDrop_button_select" text="Choisir"/>
+        <text name="limeDrop_menu_full" text="Zone pleine"/>
+        <text name="limeDrop_notify_zoneResized" text="%s mesure maintenant %s"/>
+        <text name="limeDrop_sizes_text" text="Sur un sol plat, chaque taille contient une quantité fixe selon le produit. En pente, une partie d'une livraison peut être déchargée juste à côté de la zone."/>
+        <text name="limeDrop_size_label" text="cercle de %s m"/>
+        <text name="input_LIMEDROP_PLACE" text="Placer une zone de livraison"/>
+        <text name="input_LIMEDROP_PLACE_CANCEL" text="Annuler le placement"/>
+        <text name="limeDrop_button_newZone" text="Nouvelle zone"/>
+        <text name="limeDrop_button_hideMarkers" text="Masquer les marqueurs"/>
+        <text name="limeDrop_button_showMarkers" text="Afficher les marqueurs"/>
+        <text name="limeDrop_menu_empty" text="Aucune zone de livraison"/>
+        <text name="limeDrop_menu_emptyInfo" text="Utilise Nouvelle zone ci-dessous, puis vise l'endroit voulu"/>
+        <text name="limeDrop_place_label" text="%s : %s"/>
+        <text name="limeDrop_place_hint" text="Vise l'endroit où la zone doit aller, puis place-la"/>
+        <text name="limeDrop_place_tooFar" text="Trop loin, rapproche-toi"/>
+        <text name="limeDrop_place_cancelled" text="Placement de la zone de livraison annulé"/>
+        <text name="limeDrop_warning_onFootOnly" text="Descends du véhicule pour utiliser Heap Delivery"/>
+        <text name="limeDrop_warning_handsBusy" text="Range d'abord ce que tu tiens"/>
+        <text name="limeDrop_place_notOwned" text="Uniquement sur un terrain de ta ferme"/>
+        <text name="limeDrop_place_cancelledVehicle" text="Placement de la zone de livraison annulé car tu es monté dans un véhicule"/>
+        <text name="limeDrop_place_cancelledHands" text="Placement de la zone de livraison annulé car tu as pris quelque chose"/>
+        <text name="limeDrop_size_notOwned" text="déborde sur un terrain qui ne t'appartient pas"/>
+        <text name="limeDrop_menu_notOwned" text="n'est plus sur ton terrain"/>
+        <text name="limeDrop_notify_cancelledNotOwned" text="Livraison vers %s annulée car ta ferme ne possède plus ce terrain. %s remboursés"/>
+        <text name="limeDrop_fieldLabel" text="Champ %d%s"/>
+        <text name="limeDrop_farmlandLabel" text="Parcelle %d%s"/>
+        <text name="limeDrop_nameWithDescription" text="%s - %s"/>
+        <text name="limeDrop_order_text" text="Choisis le produit et la quantité à livrer. Arrivée environ %s après la commande. Le prix comprend %s de frais de livraison."/>
+        <text name="limeDrop_order_amount" text="%s (%s)"/>
+        <text name="limeDrop_order_full" text="Il n'y a plus de place à cet emplacement."/>
+        <text name="limeDrop_time_minute" text="%d minute"/>
+        <text name="limeDrop_time_minutes" text="%d minutes"/>
+        <text name="limeDrop_time_second" text="%d seconde"/>
+        <text name="limeDrop_time_seconds" text="%d secondes"/>
+        <text name="limeDrop_settings_title" text="Heap Delivery"/>
+        <text name="limeDrop_setting_delay_title" text="Délai de livraison (tas)"/>
+        <text name="limeDrop_setting_delay_tooltip" text="Temps entre la commande et l'arrivée de la livraison (temps réel, en pause avec le jeu)"/>
+        <text name="limeDrop_setting_fee_title" text="Frais de livraison (tas)"/>
+        <text name="limeDrop_setting_fee_tooltip" text="Ajoutés au prix du produit à chaque livraison, en pourcentage du coût du produit"/>
+        <text name="limeDrop_size_currentInfo" text="C'est la taille actuelle"/>
+        <text name="limeDrop_size_blockedInfo" text="Impossible ici : %s"/>
+        <text name="limeDrop_button_history" text="Historique"/>
+        <text name="limeDrop_history_text" text="Livraisons vers cet emplacement, les plus récentes d'abord (les %d dernières)."/>
+        <text name="limeDrop_history_empty" text="Aucune livraison pour l'instant"/>
+        <text name="limeDrop_history_emptyInfo" text="Les livraisons terminées apparaissent ici"/>
+        <text name="limeDrop_history_time" text="Jour %d, %02d:%02d"/>
+        <text name="limeDrop_history_delivered" text="%s livrés"/>
+        <text name="limeDrop_history_cancelled" text="annulée (terrain vendu)"/>
+        <text name="limeDrop_size_blocked" text="chevauche une autre zone"/>
+        <text name="limeDrop_order_fee" text="Livraison (%s)"/>
+        <text name="limeDrop_order_total" text="Total"/>
+        <text name="limeDrop_button_edit" text="Modifier"/>
+        <text name="limeDrop_edit_text" text="Change la taille ou le nom de cet emplacement, ou supprime-le."/>
+        <text name="limeDrop_order_otherProduct" text="Cet emplacement contient déjà : %s. Des produits différents ne peuvent pas partager un tas."/>
+        <text name="limeDrop_menu_zoneEmpty" text="vide"/>
+        <text name="limeDrop_menu_contents" text="%s %s"/>
+        <text name="limeDrop_place_slope" text="Pente : %.1f°"/>
+        <text name="limeDrop_place_steep" text="raide, une partie d'une livraison peut être déchargée à côté de la zone"/>
+        <text name="limeDrop_notify_deliveredSpill" text="%s livré : %s à %s (%s déchargés à côté de la zone, le sol était trop raide)"/>
+        <text name="limeDrop_button_help" text="Comment ça marche"/>
+        <text name="limeDrop_help_header" text="Comment ça marche"/>
+        <text name="limeDrop_help_start_title" text="Premiers pas"/>
+        <text name="limeDrop_help_start_1" text="Heap Delivery te permet de commander des produits en vrac comme la chaux, le fumier ou la paille et de les faire déposer en tas à l'endroit de ton choix. Ouvre ce menu à pied avec Alt+L."/>
+        <text name="limeDrop_help_start_2" text="Appuie sur Nouvelle zone, regarde le sol où le tas doit aller et clique gauche pour placer la zone. Appuie ensuite sur Commander sur sa ligne, choisis le produit et la quantité, puis confirme."/>
+        <text name="limeDrop_help_start_3" text="L'argent est débité à la commande. Après le délai de livraison, le tas apparaît dans la zone et tu reçois un message."/>
+        <text name="limeDrop_help_place_title" text="Placer une zone"/>
+        <text name="limeDrop_help_place_1" text="Un cercle suit ton regard, jusqu'à 60 m. Vert : il peut être placé là, rouge : la raison s'affiche. Clic gauche pour placer, clic droit pour annuler."/>
+        <text name="limeDrop_help_place_2" text="Une zone doit se trouver entièrement sur un terrain de ta ferme et rester à 1 m de tes autres zones. Chaque ferme peut avoir jusqu'à %d zones."/>
+        <text name="limeDrop_help_place_3" text="Pendant que tu déplaces le cercle, la pente du sol en dessous s'affiche. Sur un sol raide, il t'avertit qu'une partie d'une livraison peut être déchargée à côté de la zone (voir Pentes)."/>
+        <text name="limeDrop_help_place_4" text="Le placement s'arrête si tu montes dans un véhicule, prends un outil ou un objet, ou ouvres un menu. Les zones portent le nom de leur champ (Champ 3, une deuxième Champ 3a) ; Renommer ajoute une description."/>
+        <text name="limeDrop_help_sizes_title" text="Tailles et capacité"/>
+        <text name="limeDrop_help_sizes_1" text="Les zones sont des cercles de 4, 6 ou 8 m. Les nouvelles zones reprennent la dernière taille choisie. Change une zone avec Modifier, puis Taille."/>
+        <text name="limeDrop_help_sizes_2" text="Sur un sol plat, chaque taille contient une quantité fixe :"/>
+        <text name="limeDrop_help_sizes_3" text="Le curseur de commande propose la place restante : la capacité moins ce qui se trouve déjà dans la zone."/>
+        <text name="limeDrop_help_order_title" text="Commandes et prix"/>
+        <text name="limeDrop_help_order_1" text="Commander ouvre l'écran de commande d'une zone. Choisis le produit avec le sélecteur et la quantité avec le curseur ou les boutons - et +, par pas de 500 L."/>
+        <text name="limeDrop_help_order_2" text="Le prix est le prix actuel du produit dans le jeu, difficulté économique comprise, plus des frais de livraison. Le récapitulatif affiche les deux."/>
+        <text name="limeDrop_help_order_3" text="Actuellement, une livraison prend %s et les frais sont de %s."/>
+        <text name="limeDrop_help_order_4" text="Chaque zone accepte une livraison à la fois. Commander reste grisé jusqu'à son arrivée, et la liste affiche le temps restant."/>
+        <text name="limeDrop_help_slopes_title" text="Pentes"/>
+        <text name="limeDrop_help_slopes_1" text="Les tas sont formés par le jeu lui-même, qui ne peut garder un tas que sur un sol pas trop raide. Chaque produit s'entasse un peu différemment."/>
+        <text name="limeDrop_help_slopes_2" text="En pente, la zone ne peut contenir qu'une partie d'une commande. Le reste est déchargé juste à côté de la zone, sur ton terrain et à l'écart de tes autres zones, tu reçois donc toujours la quantité complète. Le message de livraison indique combien a été déchargé à côté."/>
+        <text name="limeDrop_help_slopes_3" text="Ce n'est que si tout le sol autour est très raide que la quantité restante est remboursée."/>
+        <text name="limeDrop_help_slopes_4" text="Un tas en pente peut sembler plus gros qu'un tas sur sol plat. C'est la même quantité : il s'étale davantage et paraît plus haut côté aval."/>
+        <text name="limeDrop_help_products_title" text="Produits"/>
+        <text name="limeDrop_help_products_1" text="Tu peux commander : %s. L'icône au-dessus du sélecteur indique le produit choisi."/>
+        <text name="limeDrop_help_products_2" text="Des produits différents ne peuvent pas partager un tas. Une zone n'accepte que le produit qui s'y trouve déjà, jusqu'à ce que ce tas soit épuisé."/>
+        <text name="limeDrop_help_products_3" text="Les produits s'entassent différemment, la quantité dépend donc du produit (voir Tailles et capacité). La paille, le foin et l'herbe sont légers et volumineux et demandent beaucoup plus de place par litre."/>
+        <text name="limeDrop_help_history_title" text="Historique et remboursements"/>
+        <text name="limeDrop_help_history_1" text="L'historique affiche les %d dernières livraisons d'une zone : quand, quel produit, la quantité arrivée, le montant payé en rouge et tout remboursement en vert."/>
+        <text name="limeDrop_help_history_2" text="Les remboursements incluent leur part des frais de livraison. Si tu vends le terrain avant l'arrivée d'une livraison, toute la commande est remboursée."/>
+        <text name="limeDrop_help_history_3" text="Le jeu dépose les tas par petits morceaux entiers, les derniers litres d'une commande sont donc complétés gratuitement au lieu d'être remboursés."/>
+        <text name="limeDrop_help_settings_title" text="Paramètres et multijoueur"/>
+        <text name="limeDrop_help_settings_1" text="Le délai et les frais de livraison se trouvent dans Paramètres, Paramètres de jeu, Heap Delivery. Ils sont enregistrés avec la sauvegarde ; en multijoueur, seuls l'hôte ou un administrateur peuvent les modifier."/>
+        <text name="limeDrop_help_settings_2" text="Masquer les marqueurs dans ce menu masque les cercles et étiquettes des zones pour toi uniquement."/>
+        <text name="limeDrop_help_settings_3" text="Les zones appartiennent à ta ferme et seule ta ferme peut commander pour elles. Les descriptions saisies avec Renommer passent par le filtre de grossièretés du jeu."/>
+    </texts>
+</l10n>

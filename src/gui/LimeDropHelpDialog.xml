@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- How it works: topics on the left, the explanation of the picked topic on the right -->
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg" id="dialogBgElement"/>
+
+    <GuiElement profile="ldzhelp_dialogBg" id="dialogElement">
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+
+        <Text profile="ldzhelp_header" id="headerTextElement" text="How it works"/>
+
+        <BoxLayout profile="ldzhelp_topicBox">
+            <Button profile="ldzhelp_topicButton" id="topicButton1" text="" onClick="onClickTopic1"><ThreePartBitmap profile="ldzhelp_roundBg"/></Button>
+            <Button profile="ldzhelp_topicButton" id="topicButton2" text="" onClick="onClickTopic2"><ThreePartBitmap profile="ldzhelp_roundBg"/></Button>
+            <Button profile="ldzhelp_topicButton" id="topicButton3" text="" onClick="onClickTopic3"><ThreePartBitmap profile="ldzhelp_roundBg"/></Button>
+            <Button profile="ldzhelp_topicButton" id="topicButton4" text="" onClick="onClickTopic4"><ThreePartBitmap profile="ldzhelp_roundBg"/></Button>
+            <Button profile="ldzhelp_topicButton" id="topicButton5" text="" onClick="onClickTopic5"><ThreePartBitmap profile="ldzhelp_roundBg"/></Button>
+            <Button profile="ldzhelp_topicButton" id="topicButton6" text="" onClick="onClickTopic6"><ThreePartBitmap profile="ldzhelp_roundBg"/></Button>
+            <Button profile="ldzhelp_topicButton" id="topicButton7" text="" onClick="onClickTopic7"><ThreePartBitmap profile="ldzhelp_roundBg"/></Button>
+            <Button profile="ldzhelp_topicButton" id="topicButton8" text="" onClick="onClickTopic8"><ThreePartBitmap profile="ldzhelp_roundBg"/></Button>
+        </BoxLayout>
+
+        <Bitmap profile="ldzhelp_panel">
+            <Text profile="ldzhelp_topicTitle" id="topicTitleElement" text=""/>
+            <Text profile="ldzhelp_topicBody" id="topicBodyElement" text=""/>
+        </Bitmap>
+
+        <BoxLayout profile="fs25_dialogButtonBox">
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" id="backButton"/>
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ldzhelp_dialogBg" extends="baseReference" with="anchorMiddleCenter">
+            <size value="1100px 700px"/>
+        </Profile>
+
+        <Profile name="ldzhelp_header" extends="baseReference" with="anchorTopLeft">
+            <size value="1060px 40px"/>
+            <position value="20px -20px"/>
+            <textSize value="26px"/>
+            <textBold value="true"/>
+            <textUpperCase value="true"/>
+        </Profile>
+
+        <Profile name="ldzhelp_topicBox" extends="emptyPanel" with="anchorTopLeft">
+            <size value="280px 540px"/>
+            <position value="20px -76px"/>
+            <flowDirection value="vertical"/>
+            <alignmentX value="left"/>
+        </Profile>
+
+        <Profile name="ldzhelp_topicButton" extends="emptyPanel">
+            <size value="280px 52px"/>
+            <margin value="0px 3px 0px 6px"/>
+            <textSize value="17px"/>
+            <textBold value="true"/>
+            <textAlignment value="center"/>
+            <textVerticalAlignment value="middle"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <textHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <textFocusedColor value="$preset_fs25_colorMainDark"/>
+            <textSelectedColor value="$preset_fs25_colorMainDark"/>
+            <textDisabledColor value="$preset_colorDisabled"/>
+            <imageColor value="0 0 0 0"/>
+            <imageHighlightedColor value="0 0 0 0"/>
+            <imageFocusedColor value="0 0 0 0"/>
+            <imageDisabledColor value="0 0 0 0"/>
+        </Profile>
+
+        <Profile name="ldzhelp_roundBg" extends="fs25_settingsButtonBg">
+            <imageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <imagePressedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImagePressedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImagePressedColor value="$preset_fs25_colorMainHighlight"/>
+        </Profile>
+
+        <Profile name="ldzhelp_panel" extends="emptyPanel" with="anchorTopLeft">
+            <size value="760px 540px"/>
+            <position value="320px -76px"/>
+            <imageSliceId value="gui.progressbar_middle"/>
+            <imageColor value="1 1 1 0.04"/>
+        </Profile>
+
+        <Profile name="ldzhelp_topicTitle" extends="baseReference" with="anchorTopLeft">
+            <size value="720px 36px"/>
+            <position value="20px -16px"/>
+            <textSize value="22px"/>
+            <textBold value="true"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="middle"/>
+        </Profile>
+
+        <Profile name="ldzhelp_topicBody" extends="baseReference" with="anchorTopLeft">
+            <size value="720px 470px"/>
+            <position value="20px -62px"/>
+            <textSize value="17px"/>
+            <textColor value="1 1 1 0.85"/>
+            <textAlignment value="left"/>
+            <textVerticalAlignment value="top"/>
+            <textWrapWidth value="720px"/>
+            <textMaxNumLines value="22"/>
+            <textLineHeightScale value="1.15"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

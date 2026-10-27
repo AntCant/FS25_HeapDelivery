@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="input_LIMEDROP_MENU" text="Menu Heap Delivery"/>
+        <text name="limeDrop_zoneDefaultName" text="Zona di consegna #%d"/>
+        <text name="limeDrop_zonePending" text="In arrivo: %s tra %s"/>
+        <text name="limeDrop_notify_zoneAdded" text="%s creata"/>
+        <text name="limeDrop_notify_zoneRemoved" text="%s rimossa"/>
+        <text name="limeDrop_notify_zoneRenamed" text="Zona rinominata in %s"/>
+        <text name="limeDrop_notify_ordered" text="%s ordinato: %s per %s, arrivo tra %s"/>
+        <text name="limeDrop_notify_delivered" text="%s consegnato: %s in %s"/>
+        <text name="limeDrop_notify_refund" text="Solo %s sono entrati nella zona. %s rimborsati"/>
+        <text name="limeDrop_notify_markersShown" text="Indicatori delle zone di consegna mostrati"/>
+        <text name="limeDrop_notify_markersHidden" text="Indicatori delle zone di consegna nascosti"/>
+        <text name="limeDrop_warning_tooClose" text="Troppo vicino a un'altra zona di consegna"/>
+        <text name="limeDrop_warning_maxZones" text="Raggiunto il massimo di %d zone di consegna"/>
+        <text name="limeDrop_warning_noMoney" text="Denaro insufficiente per questo ordine"/>
+        <text name="limeDrop_warning_orderPending" text="Una consegna è già in viaggio verso %s"/>
+        <text name="limeDrop_warning_noFarm" text="Devi prima unirti a una fattoria"/>
+        <text name="limeDrop_warning_noHeaps" text="Questa mappa non consente cumuli a terra"/>
+        <text name="limeDrop_menu_title" text="Heap Delivery"/>
+        <text name="limeDrop_menu_text" text="Ordina una consegna per un punto, guarda le sue consegne o modificalo. Ogni punto accetta una consegna alla volta."/>
+        <text name="limeDrop_menu_incoming" text="%s in arrivo, arriva tra %s"/>
+        <text name="limeDrop_button_order" text="Ordina"/>
+        <text name="limeDrop_button_rename" text="Rinomina"/>
+        <text name="limeDrop_button_remove" text="Rimuovi"/>
+        <text name="limeDrop_rename_prompt" text="Breve descrizione mostrata dopo %s - (per esempio ingresso anteriore)"/>
+        <text name="limeDrop_rename_confirm" text="Rinomina"/>
+        <text name="limeDrop_remove_title" text="Rimuovi zona di consegna"/>
+        <text name="limeDrop_remove_text" text="Rimuovere %s? Le consegne già ordinate arriveranno comunque."/>
+        <text name="limeDrop_button_size" text="Dimensione"/>
+        <text name="limeDrop_button_select" text="Seleziona"/>
+        <text name="limeDrop_menu_full" text="Zona piena"/>
+        <text name="limeDrop_notify_zoneResized" text="%s ora è %s"/>
+        <text name="limeDrop_sizes_text" text="Su terreno piano ogni dimensione contiene una quantità fissa, a seconda del prodotto. In pendenza parte di una consegna può essere scaricata proprio accanto alla zona."/>
+        <text name="limeDrop_size_label" text="cerchio di %s m"/>
+        <text name="input_LIMEDROP_PLACE" text="Posiziona zona di consegna"/>
+        <text name="input_LIMEDROP_PLACE_CANCEL" text="Annulla posizionamento"/>
+        <text name="limeDrop_button_newZone" text="Nuova zona"/>
+        <text name="limeDrop_button_hideMarkers" text="Nascondi indicatori"/>
+        <text name="limeDrop_button_showMarkers" text="Mostra indicatori"/>
+        <text name="limeDrop_menu_empty" text="Nessuna zona di consegna"/>
+        <text name="limeDrop_menu_emptyInfo" text="Usa Nuova zona qui sotto, poi mira dove deve andare la zona"/>
+        <text name="limeDrop_place_label" text="%s: %s"/>
+        <text name="limeDrop_place_hint" text="Mira dove deve andare la zona, poi posizionala"/>
+        <text name="limeDrop_place_tooFar" text="Troppo lontano, avvicinati"/>
+        <text name="limeDrop_place_cancelled" text="Posizionamento della zona di consegna annullato"/>
+        <text name="limeDrop_warning_onFootOnly" text="Scendi dal veicolo per usare Heap Delivery"/>
+        <text name="limeDrop_warning_handsBusy" text="Prima metti via ciò che stai tenendo"/>
+        <text name="limeDrop_place_notOwned" text="Solo su terreni della tua fattoria"/>
+        <text name="limeDrop_place_cancelledVehicle" text="Posizionamento della zona di consegna annullato perché sei salito su un veicolo"/>
+        <text name="limeDrop_place_cancelledHands" text="Posizionamento della zona di consegna annullato perché hai raccolto qualcosa"/>
+        <text name="limeDrop_size_notOwned" text="finisce su un terreno che non possiedi"/>
+        <text name="limeDrop_menu_notOwned" text="non è più sul tuo terreno"/>
+        <text name="limeDrop_notify_cancelledNotOwned" text="Consegna a %s annullata perché la tua fattoria non possiede più quel terreno. %s rimborsati"/>
+        <text name="limeDrop_fieldLabel" text="Campo %d%s"/>
+        <text name="limeDrop_farmlandLabel" text="Terreno %d%s"/>
+        <text name="limeDrop_nameWithDescription" text="%s - %s"/>
+        <text name="limeDrop_order_text" text="Scegli il prodotto e la quantità da consegnare. Arriva circa %s dopo l'ordine. Il prezzo include %s di costo di consegna."/>
+        <text name="limeDrop_order_amount" text="%s (%s)"/>
+        <text name="limeDrop_order_full" text="Non c'è più spazio in questo punto."/>
+        <text name="limeDrop_time_minute" text="%d minuto"/>
+        <text name="limeDrop_time_minutes" text="%d minuti"/>
+        <text name="limeDrop_time_second" text="%d secondo"/>
+        <text name="limeDrop_time_seconds" text="%d secondi"/>
+        <text name="limeDrop_settings_title" text="Heap Delivery"/>
+        <text name="limeDrop_setting_delay_title" text="Tempo di consegna (cumuli)"/>
+        <text name="limeDrop_setting_delay_tooltip" text="Quanto tempo dopo l'ordine una consegna arriva al suo punto (tempo reale, in pausa con il gioco)"/>
+        <text name="limeDrop_setting_fee_title" text="Costo di consegna (cumuli)"/>
+        <text name="limeDrop_setting_fee_tooltip" text="Aggiunto al prezzo del prodotto per ogni consegna, come percentuale del costo del prodotto"/>
+        <text name="limeDrop_size_currentInfo" text="Questa è la dimensione attuale"/>
+        <text name="limeDrop_size_blockedInfo" text="Non possibile qui: %s"/>
+        <text name="limeDrop_button_history" text="Cronologia"/>
+        <text name="limeDrop_history_text" text="Consegne a questo punto, dalla più recente (ultime %d)."/>
+        <text name="limeDrop_history_empty" text="Ancora nessuna consegna"/>
+        <text name="limeDrop_history_emptyInfo" text="Le consegne completate compaiono qui"/>
+        <text name="limeDrop_history_time" text="Giorno %d, %02d:%02d"/>
+        <text name="limeDrop_history_delivered" text="%s consegnati"/>
+        <text name="limeDrop_history_cancelled" text="annullata (terreno venduto)"/>
+        <text name="limeDrop_size_blocked" text="si sovrappone a un'altra zona"/>
+        <text name="limeDrop_order_fee" text="Consegna (%s)"/>
+        <text name="limeDrop_order_total" text="Totale"/>
+        <text name="limeDrop_button_edit" text="Modifica"/>
+        <text name="limeDrop_edit_text" text="Cambia la dimensione o il nome di questo punto, oppure rimuovilo."/>
+        <text name="limeDrop_order_otherProduct" text="In questo punto c'è già %s. Prodotti diversi non possono condividere un cumulo."/>
+        <text name="limeDrop_menu_zoneEmpty" text="vuota"/>
+        <text name="limeDrop_menu_contents" text="%s %s"/>
+        <text name="limeDrop_place_slope" text="Pendenza: %.1f°"/>
+        <text name="limeDrop_place_steep" text="ripido, parte di una consegna potrebbe essere scaricata accanto alla zona"/>
+        <text name="limeDrop_notify_deliveredSpill" text="%s consegnato: %s in %s (%s scaricati accanto alla zona, il terreno era troppo ripido)"/>
+        <text name="limeDrop_button_help" text="Come funziona"/>
+        <text name="limeDrop_help_header" text="Come funziona"/>
+        <text name="limeDrop_help_start_title" text="Per iniziare"/>
+        <text name="limeDrop_help_start_1" text="Heap Delivery ti permette di ordinare prodotti sfusi come calce, letame o paglia e di farli scaricare in un cumulo nel punto che scegli. Apri questo menu a piedi con Alt+L."/>
+        <text name="limeDrop_help_start_2" text="Premi Nuova zona, guarda il terreno dove deve andare il cumulo e fai clic sinistro per posizionare la zona. Poi premi Ordina sulla sua riga, scegli prodotto e quantità e conferma."/>
+        <text name="limeDrop_help_start_3" text="Il denaro viene addebitato all'ordine. Dopo il tempo di consegna il cumulo compare nella zona e ricevi un messaggio."/>
+        <text name="limeDrop_help_place_title" text="Posizionare una zona"/>
+        <text name="limeDrop_help_place_1" text="Un cerchio segue il tuo sguardo, fino a 60 m. Verde significa che può andare lì, rosso ti dice perché no. Clic sinistro per posizionare, clic destro per annullare."/>
+        <text name="limeDrop_help_place_2" text="Una zona deve trovarsi interamente su terreni della tua fattoria e restare a 1 m dalle tue altre zone. Ogni fattoria può avere fino a %d zone."/>
+        <text name="limeDrop_help_place_3" text="Mentre sposti il cerchio viene mostrata la pendenza del terreno sottostante. Su terreno ripido ti avvisa che parte di una consegna potrebbe essere scaricata accanto alla zona (vedi Pendenze)."/>
+        <text name="limeDrop_help_place_4" text="Il posizionamento si interrompe se sali su un veicolo, prendi un attrezzo o un oggetto, o apri un menu. Le zone prendono il nome del loro campo (Campo 3, una seconda Campo 3a); Rinomina aggiunge una descrizione."/>
+        <text name="limeDrop_help_sizes_title" text="Dimensioni e capacità"/>
+        <text name="limeDrop_help_sizes_1" text="Le zone sono cerchi larghi 4, 6 o 8 m. Le nuove zone usano l'ultima dimensione scelta. Cambia una zona con Modifica, poi Dimensione."/>
+        <text name="limeDrop_help_sizes_2" text="Su terreno piano ogni dimensione contiene una quantità fissa:"/>
+        <text name="limeDrop_help_sizes_3" text="Il cursore dell'ordine offre lo spazio rimasto: la capacità meno ciò che si trova già nella zona."/>
+        <text name="limeDrop_help_order_title" text="Ordini e prezzi"/>
+        <text name="limeDrop_help_order_1" text="Ordina apre la schermata d'ordine di una zona. Scegli il prodotto con il selettore e la quantità con il cursore o i pulsanti - e +, a passi di 500 L."/>
+        <text name="limeDrop_help_order_2" text="Il prezzo è il prezzo attuale del prodotto nel gioco, difficoltà economica inclusa, più un costo di consegna. Il riepilogo mostra entrambi."/>
+        <text name="limeDrop_help_order_3" text="Al momento una consegna richiede %s e il costo è %s."/>
+        <text name="limeDrop_help_order_4" text="Ogni zona accetta una consegna alla volta. Ordina resta grigio finché non arriva, e l'elenco mostra il tempo rimanente."/>
+        <text name="limeDrop_help_slopes_title" text="Pendenze"/>
+        <text name="limeDrop_help_slopes_1" text="I cumuli sono formati dal gioco stesso, che può mantenere un cumulo solo su un terreno non troppo ripido. Ogni prodotto si accumula in modo un po' diverso."/>
+        <text name="limeDrop_help_slopes_2" text="In pendenza la zona può contenere solo una parte di un ordine. Il resto viene scaricato proprio accanto alla zona, sul tuo terreno e lontano dalle tue altre zone, così ricevi comunque la quantità completa. Il messaggio di consegna indica quanto è finito accanto alla zona."/>
+        <text name="limeDrop_help_slopes_3" text="Solo se tutto il terreno intorno è molto ripido la quantità rimanente viene rimborsata."/>
+        <text name="limeDrop_help_slopes_4" text="Un cumulo in pendenza può sembrare più grande di uno su terreno piano. È la stessa quantità: si allarga di più e appare più alto sul lato a valle."/>
+        <text name="limeDrop_help_products_title" text="Prodotti"/>
+        <text name="limeDrop_help_products_1" text="Puoi ordinare: %s. L'icona sopra il selettore mostra quale prodotto è scelto."/>
+        <text name="limeDrop_help_products_2" text="Prodotti diversi non possono condividere un cumulo. Una zona accetta solo il prodotto che contiene già, finché quel cumulo non è esaurito."/>
+        <text name="limeDrop_help_products_3" text="I prodotti si accumulano in modo diverso, quindi la quantità dipende dal prodotto (vedi Dimensioni e capacità). Paglia, fieno ed erba sono leggeri e voluminosi e richiedono molto più spazio per litro."/>
+        <text name="limeDrop_help_history_title" text="Cronologia e rimborsi"/>
+        <text name="limeDrop_help_history_1" text="La cronologia mostra le ultime %d consegne di una zona: quando, quale prodotto, quanto è arrivato, l'importo pagato in rosso e gli eventuali rimborsi in verde."/>
+        <text name="limeDrop_help_history_2" text="I rimborsi includono la loro parte del costo di consegna. Se vendi il terreno prima dell'arrivo di una consegna, l'intero ordine viene rimborsato."/>
+        <text name="limeDrop_help_history_3" text="Il gioco deposita i cumuli in piccoli pezzi interi, quindi gli ultimi litri di un ordine vengono completati gratuitamente invece di essere rimborsati."/>
+        <text name="limeDrop_help_settings_title" text="Impostazioni e multigiocatore"/>
+        <text name="limeDrop_help_settings_1" text="Tempo e costo di consegna si trovano in Impostazioni, Impostazioni di gioco, Heap Delivery. Vengono salvati con il salvataggio; in multigiocatore solo l'host o un amministratore può modificarli."/>
+        <text name="limeDrop_help_settings_2" text="Nascondi indicatori in questo menu nasconde i cerchi e le etichette delle zone solo per te."/>
+        <text name="limeDrop_help_settings_3" text="Le zone appartengono alla tua fattoria e solo la tua fattoria può ordinare per esse. Le descrizioni inserite con Rinomina passano dal filtro delle parolacce del gioco."/>
+    </texts>
+</l10n>
