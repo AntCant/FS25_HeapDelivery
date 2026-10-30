@@ -27,7 +27,7 @@ Features:
 - Delivery time and fee can be changed in the game settings.
 - Multiplayer supported.
 
-Bug reports: https://github.com/AntCant/FS25_HeapDelivery]]></en>
+Bug reports: https://github.com/Cantarix/FS25_HeapDelivery]]></en>
         <de><![CDATA[Bestelle Schüttgut und lass es dir als Haufen auf dein eigenes Land liefern.
 
 Markiere eine Lieferzone, wähle Produkt und Menge, und nach der Lieferzeit liegt der Haufen in der Zone.
@@ -43,7 +43,7 @@ Funktionen:
 - Lieferzeit und Gebühr lassen sich in den Spieleinstellungen ändern.
 - Mehrspieler wird unterstützt.
 
-Fehlermeldungen: https://github.com/AntCant/FS25_HeapDelivery]]></de>
+Fehlermeldungen: https://github.com/Cantarix/FS25_HeapDelivery]]></de>
         <fr><![CDATA[Commandez des produits en vrac et faites-les livrer en tas sur vos propres terres.
 
 Marquez une zone de livraison, choisissez le produit et la quantité, et après le délai de livraison le tas est déposé dans la zone.
@@ -59,7 +59,7 @@ Fonctionnalités :
 - Le délai et les frais de livraison se règlent dans les paramètres de jeu.
 - Multijoueur pris en charge.
 
-Signalement de bugs : https://github.com/AntCant/FS25_HeapDelivery]]></fr>
+Signalement de bugs : https://github.com/Cantarix/FS25_HeapDelivery]]></fr>
         <it><![CDATA[Ordina prodotti sfusi e falli consegnare in un cumulo sul tuo terreno.
 
 Segna una zona di consegna, scegli prodotto e quantità e, dopo il tempo di consegna, il cumulo viene scaricato nella zona.
@@ -75,7 +75,7 @@ Caratteristiche:
 - Tempo e costo di consegna si possono modificare nelle impostazioni di gioco.
 - Multigiocatore supportato.
 
-Segnalazione di bug: https://github.com/AntCant/FS25_HeapDelivery]]></it>
+Segnalazione di bug: https://github.com/Cantarix/FS25_HeapDelivery]]></it>
     </description>
 
     <l10n filenamePrefix="l10n/l10n"/>
